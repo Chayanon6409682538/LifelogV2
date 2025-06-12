@@ -34,5 +34,13 @@ Manual / Instructions
    * สร้าง Access keys และกำหนด Permission ให้ Users ที่สร้าง จากนั้นบันทึก `accessKeyId` และ `secretAccessKey` ไว้
 
 ## ขั้นตอนการติดตั้งโปรแกรมของโครงงาน
+ **Clone git repository ไปยังเครื่องที่ใช้พัฒนา**
 
+  **การใช้งานอุปกรณ์ IoT**
+  
+1. เปิดโฟลเดอร์ **Arduino/reconnectiot** ในโปรแกรม **Arduino IDE**
+2. เชื่อมต่อสาย USB สำหรับเบิร์นโค้ดลงอุปกรณ์ แล้วเลือก **Upload** ในโปรแกรม
+3. เมื่ออุปกรณ์เริ่มทำงานให้เปิด Serial monitor เพื่อดู Log ที่ได้จากอุปกรณ์ บันทึกเลข IP address ของเซิร์ฟเวอร์ของอุปกรณ์ ที่แสดงใน Serial monitor ไว้
+
+  **การใช้งาน Android Application ใน Android Emulator**
 # Topic 3
