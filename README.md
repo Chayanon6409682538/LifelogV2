@@ -34,9 +34,9 @@ Manual / Instructions
    * สร้าง Access keys และกำหนด Permission ให้ Users ที่สร้าง จากนั้นบันทึก `accessKeyId` และ `secretAccessKey` ไว้
 
 ## ขั้นตอนการติดตั้งโปรแกรมของโครงงาน
- **Clone git repository ไปยังเครื่องที่ใช้พัฒนา**
+ **Clone git repository ไปยังเครื่องที่จะใช้รันโปรแกรม**
 
-**การสร้างเซอร์วิสของ AWS ผ่าน CloudFormation Template**
+### **การสร้างเซอร์วิสของ AWS ผ่าน CloudFormation Template**
 
 1. ไปที่หน้าคอนโซลของเซอร์วิส Cloudformation
 2. เลือกแถบ Stacks ที่แถบเมนูด้านข้าง
@@ -50,13 +50,13 @@ Manual / Instructions
 10. เมื่อสร้างสำเร็จแล้ว เลือกไปที่ `Stack details` และเลือก `Outputs`
 11. ใน **Key** ชื่อ `APIGatewayURL` มี **Value** เป็น Endpoint ของ ApiGateway อยู่ ให้คัดลอกและบันทึกไว้
 
-  **การใช้งานอุปกรณ์ IoT**
+### **การใช้งานอุปกรณ์ IoT**
   
 1. เปิดโฟลเดอร์ **Arduino/reconnectiot** ในโปรแกรม **Arduino IDE**
 2. เชื่อมต่อสาย USB สำหรับเบิร์นโค้ดลงอุปกรณ์ แล้วเลือก **Upload** ในโปรแกรม
 3. เมื่ออุปกรณ์เริ่มทำงานให้เปิด Serial monitor เพื่อดู Log ที่ได้จากอุปกรณ์ บันทึกเลข IP address ของเซิร์ฟเวอร์ของอุปกรณ์ ที่แสดงใน Serial monitor ไว้
 
-  **การใช้งาน Android Application ใน Android Emulator**
+### **การใช้งาน Android Application ใน Android Emulator**
 1. เปิดโฟลเดอร์ **AndroidApp/FaceRecognitionImages** ในโปรแกรม **Android Studio**
 2. Build โปรเจคที่นำเข้ามา
 3. เปิดไฟล์ในโปรแกรมชื่อ `RecognitionActivity.java`
@@ -66,7 +66,7 @@ Manual / Instructions
 7. เมื่อสร้างสำเร็จแล้วเลือก `Run app`
 8. Emulator จะถูกเปิดขึ้นและโปรแกรมจะถูกเปิดภายใน Emulator
 
-  **การใช้งาน Web Application**
+### **การใช้งาน Web Application**
 1. เปิดโฟลเดอร์ **WebApp** ใน **Visual Studio Code**
 2. เปิดไฟล์ในโปรแกรมชื่อ `getDataAndSaveToLocal`
 3. ในบรรทัดที่ 7 และ 8 ให้เติม `accessKeyId` และ `secretAccessKey` ด้วย acceskey ที่บันทึกไว้ตอนสร้าง Users ในเซอร์วิส IAM ใส่ `region` เป็น region ของ AWS ที่ใช้งานในปัจจุบัน
@@ -75,4 +75,4 @@ Manual / Instructions
 6. ทดลองเปลี่ยน path เป็น `http://localhost:3000/Mainpage`
 7. ลองใช้งานโปรแกรม
 
-**หลังจากติดตั้งโปรแกรมเรียบบร้อยแล้ว ทดลองใช้งานโปรแกรมตาม Pipeline โดยการใช้อุปกรณ์ถ่ายภาพ จากนั้นภาพจะถูกส่งมาประมวลผลที่ Android Application แล้วถูกส่งไปจัดเก็บยังเซอร์วิสบน AWS แล้วลองค้นหารูปภาพผ่าน Web Application**
+**หลังจากติดตั้งโปรแกรมเรียบร้อยแล้ว ทดลองใช้งานโปรแกรมตาม Pipeline โดยการใช้อุปกรณ์ถ่ายภาพ จากนั้นภาพจะถูกส่งมาประมวลผลที่ Android Application แล้วถูกส่งไปจัดเก็บยังเซอร์วิสบน AWS แล้วลองค้นหารูปภาพผ่าน Web Application**
