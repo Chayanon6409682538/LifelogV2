@@ -1,3 +1,6 @@
+**Link DownLoad Androidstudio  Version android-studio-2024.2.2.15-windows**
+https://developer.android.com/studio/archive?hl=th
+
 **รหัสโครงงาน:** 67-1_29_wdp-r1
 
 **ชื่อโครงงาน (ไทย):** การศึกษาอุปกรณ์บันทึกชีวิตและแพลตฟอร์มสำหรับจัดเก็บข้อมูลเวอร์ชัน 2
